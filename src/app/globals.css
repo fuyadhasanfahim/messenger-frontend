@@ -122,3 +122,15 @@
         @apply font-inter;
     }
 }
+
+.container {
+    @apply w-full max-w-7xl mx-auto;
+}
+
+.padding-x {
+    @apply px-4 md:px-6 lg:px-8;
+}
+
+.padding-y {
+    @apply py-10 md:py-16 lg:py-24;
+}
