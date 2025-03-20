@@ -10,6 +10,7 @@ import {
     SidebarInput,
 } from '@/components/ui/sidebar';
 import { Switch } from '@/components/ui/switch';
+import Link from 'next/link';
 import { ComponentProps } from 'react';
 
 const mails = [
@@ -33,9 +34,12 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
             <Sidebar collapsible="none" className="hidden flex-1 md:flex">
                 <SidebarHeader className="gap-3.5 border-b p-4">
                     <div className="flex w-full items-center justify-between">
-                        <div className="text-base font-medium text-foreground">
+                        <Link
+                            href="/"
+                            className="text-base font-medium text-foreground"
+                        >
                             Inbox
-                        </div>
+                        </Link>
                         <Label className="flex items-center gap-2 text-sm">
                             <span>Unreads</span>
                             <Switch className="shadow-none" />
